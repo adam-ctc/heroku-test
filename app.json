@@ -1,21 +1,12 @@
 {
-  "name": "heroku-test",
-  "scripts": {
-  },
+  "name": "Phone Change",
+  "description": "Heroku Connect Sample App - Phone Change",
+  "repository": "https://github.com/jamesward/heroku-connect-phone-change",
+  "success_url": "/setup.html",
   "env": {
     "PGSSLMODE": {
-      "required": true
+      "description": "Require SSL for Postgres",
+      "value": "require"
     }
-  },
-  "formation": {
-  },
-  "addons": [
-    "herokuconnect",
-    "heroku-postgresql"
-  ],
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    }
-  ]
+  }
 }
